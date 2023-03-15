@@ -177,17 +177,17 @@ body main .slider__item-text {
   margin: 0 0 65px 0;
 }
 body main .slider .first {
-  background-image: url("/assets/slider_1.jpg");
+  background-image: url("../assets/slider_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 body main .slider .second {
-  background-image: url("/assets/slider_2.jpg");
+  background-image: url("../assets/slider_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 body main .slider .third {
-  background-image: url("/assets/slider_3.jpg");
+  background-image: url("../assets/slider_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -251,7 +251,7 @@ body main .communacation .item:nth-child(1).active {
   opacity: 1;
 }
 body main .communacation .item:nth-child(2) {
-  transform: translate(0, 30%);
+  transform: translate(0, 10%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
@@ -260,6 +260,7 @@ body main .communacation .item:nth-child(2).active {
   opacity: 1;
 }
 body main .communacation .item:nth-child(3) {
+  margin-right: 0;
   transform: translate(100%, 0);
   opacity: 0;
   transition: all 0.8s ease 0s;
@@ -270,11 +271,10 @@ body main .communacation .item:nth-child(3).active {
 }
 @media screen and (max-width: 839px) {
   body main .communacation {
-    font-size: 14px;
     flex-wrap: wrap;
   }
   body main .communacation .item {
-    margin: 0;
+    margin: 0 10px;
   }
   body main .communacation .item:not(:last-child) {
     margin-bottom: 30px;
@@ -314,7 +314,7 @@ body main .description .block__img.advert-img.active {
   opacity: 1;
 }
 body main .description .block__info {
-  transform: translate(0, 100%);
+  transform: translate(0, 30%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
@@ -324,6 +324,9 @@ body main .description .block__info-text {
 body main .description .block__info.active {
   transform: translate(0, 0);
   opacity: 1;
+}
+body main .description .block:nth-child(2) {
+  margin-right: 0;
 }
 @media screen and (max-width: 1300px) {
   body main .description {
@@ -341,6 +344,10 @@ body main .description .block__info.active {
   }
   body main .description .block__img {
     width: 360px;
+  }
+  body main .description .block__info-text {
+    text-align: start;
+    margin: 0 10px;
   }
 }
 body main .partners {
@@ -376,7 +383,15 @@ body main .partners.active {
 }
 @media screen and (max-width: 500px) {
   body main .partners {
-    font-size: 14px;
+    height: 100%;
+  }
+  body main .partners .content .title {
+    padding: 0;
+  }
+  body main .partners .content__text {
+    text-align: start;
+    padding: 0;
+    margin: 0 10px;
   }
 }
 body main .about {
@@ -404,7 +419,11 @@ body main .about .block__text {
 }
 @media screen and (max-width: 570px) {
   body main .about .block {
-    width: 350px;
+    width: 100%;
+  }
+  body main .about .block__text {
+    text-align: start;
+    padding: 0 10px;
   }
 }
 body main .advertisers {
@@ -455,6 +474,14 @@ body main .advertisers .block:nth-child(2).active {
   transform: translate(0, 0);
   opacity: 1;
 }
+@media screen and (max-width: 820px) {
+  body main .advertisers .block {
+    padding: 0 20px 20px 20px;
+  }
+  body main .advertisers .block__text {
+    text-align: start;
+  }
+}
 @media screen and (max-width: 720px) {
   body main .advertisers {
     flex-wrap: wrap;
@@ -489,18 +516,23 @@ body footer .container .block__mails-mail {
 @media screen and (max-width: 870px) {
   body footer {
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 560px) {
   body footer {
     height: 220px;
+    align-items: start;
+    padding-top: 20px;
   }
   body footer .container {
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 14px;
   }
   body footer .container .block {
-    margin: 0 0 14px 0;
+    margin: 0 0 0 10px;
+  }
+  body footer .container .block__img {
+    width: 50px;
+    height: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
