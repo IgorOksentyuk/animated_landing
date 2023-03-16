@@ -1,4 +1,3 @@
-# animated_landing
 **This is an animated landing page with a slider and various blocks with different types of animation.**
 ---
 
