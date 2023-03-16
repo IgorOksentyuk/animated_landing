@@ -354,7 +354,7 @@ body main .partners {
   display: flex;
   justify-content: center;
   height: 505px;
-  background-image: url("/assets/parnters.jpg");
+  background-image: url("../assets/partners.jpg");
   background-repeat: no-repeat;
   transition: all 2.5s ease 0s;
   opacity: 0;
