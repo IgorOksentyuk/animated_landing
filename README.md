@@ -11,4 +11,5 @@ _Made with plain:_
 ---
 
 _How to run:_
+Download and unzip archive.
 Open **index.html** file in your browser.
