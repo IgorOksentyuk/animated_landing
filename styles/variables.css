@@ -3,13 +3,13 @@
   --headerBlack: #1a1a19;
   --inputGrey: #565656;
   --btnRed: #c35100;
+  --btnHover: #ff6b00;
   /* slider section */
   --arrowBrown: #c35100;
   /* communication section */
-  --communicationGrey: #33363d;
+  --backgroundBlack: #33363d;
   /* advertisers section */
   --advertisersGrey: #e8e8e8;
   /* footer */
-  --footerBlack: #33363d;
   --footerGrey: #606368;
 }
