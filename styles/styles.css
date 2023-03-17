@@ -569,7 +569,7 @@ body footer .container .block__mails-mail:hover {
     flex-wrap: wrap;
   }
   body footer .container .block {
-    margin: 0 0 0 10px;
+    margin: 0 0 10px 10px;
   }
   body footer .container .block__img {
     width: 50px;
