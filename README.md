@@ -1,4 +1,4 @@
-**This is an animated landing page with a slider and various blocks with different types of animation.**
+**This is a landing page with a slider and various blocks with different types of animation.**
 ---
 
 _Made with plain:_
