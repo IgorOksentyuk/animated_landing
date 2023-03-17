@@ -12,6 +12,8 @@ body {
     height: 40px;
     background-color: var(--btnRed);
     color: #fff;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
   }
 
   .title {
@@ -77,6 +79,10 @@ body {
 
       &__input::placeholder {
         color: #fff;
+      }
+
+      .btn:hover {
+        background-color: var(--btnHover);
       }
     }
   }
@@ -166,6 +172,12 @@ body {
         padding: 18px;
         margin: 50px;
         cursor: pointer;
+        transition: all 0.3s ease 0s;
+      }
+
+      .slick-arrow:hover {
+        border: solid var(--btnHover);
+        border-width: 0 14px 14px 0;
       }
 
       .slick-next {
@@ -193,6 +205,10 @@ body {
           cursor: pointer;
         }
 
+        button:hover {
+          background-color: var(--btnHover);
+        }
+
         .slick-active button {
           background-color: #fff;
         }
@@ -216,6 +232,11 @@ body {
           font-size: 24px;
           text-align: center;
           margin: 0 0 65px 0;
+        }
+
+        .btn:hover {
+          color: #000;
+          background-color: #fff;
         }
       }
 
@@ -272,7 +293,7 @@ body {
       justify-content: center;
       align-items: center;
       padding: 100px 0;
-      background-color: var(--communicationGrey);
+      background-color: var(--backgroundBlack);
       color: #fff;
 
       .item {
@@ -298,6 +319,10 @@ body {
 
         .btn {
           width: 180px;
+        }
+
+        .btn:hover {
+          background-color: var(--btnHover);
         }
       }
 
@@ -619,6 +644,7 @@ body {
         .block {
           align-items: center;
           margin-right: 0;
+          padding: 0 10px 10px 10px;
         }
       }
     }
@@ -630,7 +656,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--footerBlack);
+    background-color: var(--backgroundBlack);
     color: var(--footerGrey);
 
     .container {
@@ -643,11 +669,26 @@ body {
 
         &__img {
           margin-right: 20px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
         }
 
         &__mails {
+          display: flex;
+          flex-direction: column;
+
           &-mail {
             margin: 0 0 12px 0;
+            color: var(--footerGrey);
+            text-decoration: none;
+
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+          }
+
+          &-mail:hover {
+            color: var(--btnHover);
+            text-decoration: underline dashed;
           }
         }
       }

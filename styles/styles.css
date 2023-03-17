@@ -10,6 +10,8 @@ body .btn {
   height: 40px;
   background-color: var(--btnRed);
   color: #fff;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 body .title {
   font-size: 46px;
@@ -66,6 +68,9 @@ body header .form__input {
 }
 body header .form__input::placeholder {
   color: #fff;
+}
+body header .form .btn:hover {
+  background-color: var(--btnHover);
 }
 @media screen and (max-width: 850px) {
   body header .logo__img {
@@ -132,6 +137,11 @@ body main .slider .slick-arrow {
   padding: 18px;
   margin: 50px;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+body main .slider .slick-arrow:hover {
+  border: solid var(--btnHover);
+  border-width: 0 14px 14px 0;
 }
 body main .slider .slick-next {
   right: 0;
@@ -155,6 +165,9 @@ body main .slider .slick-dots button {
   border: none;
   cursor: pointer;
 }
+body main .slider .slick-dots button:hover {
+  background-color: var(--btnHover);
+}
 body main .slider .slick-dots .slick-active button {
   background-color: #fff;
 }
@@ -175,6 +188,10 @@ body main .slider__item-text {
   font-size: 24px;
   text-align: center;
   margin: 0 0 65px 0;
+}
+body main .slider__item .btn:hover {
+  color: #000;
+  background-color: #fff;
 }
 body main .slider .first {
   background-image: url("../assets/slider_1.jpg");
@@ -217,7 +234,7 @@ body main .communacation {
   justify-content: center;
   align-items: center;
   padding: 100px 0;
-  background-color: var(--communicationGrey);
+  background-color: var(--backgroundBlack);
   color: #fff;
 }
 body main .communacation .item {
@@ -240,6 +257,9 @@ body main .communacation .item__text {
 }
 body main .communacation .item .btn {
   width: 180px;
+}
+body main .communacation .item .btn:hover {
+  background-color: var(--btnHover);
 }
 body main .communacation .item:nth-child(1) {
   transform: translate(-100%, 0);
@@ -489,6 +509,7 @@ body main .advertisers .block:nth-child(2).active {
   body main .advertisers .block {
     align-items: center;
     margin-right: 0;
+    padding: 0 10px 10px 10px;
   }
 }
 body footer {
@@ -496,7 +517,7 @@ body footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--footerBlack);
+  background-color: var(--backgroundBlack);
   color: var(--footerGrey);
 }
 body footer .container {
@@ -509,9 +530,23 @@ body footer .container .block {
 }
 body footer .container .block__img {
   margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+body footer .container .block__mails {
+  display: flex;
+  flex-direction: column;
 }
 body footer .container .block__mails-mail {
   margin: 0 0 12px 0;
+  color: var(--footerGrey);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+body footer .container .block__mails-mail:hover {
+  color: var(--btnHover);
+  text-decoration: underline dashed;
 }
 @media screen and (max-width: 870px) {
   body footer {
