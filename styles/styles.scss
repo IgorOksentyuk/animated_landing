@@ -293,14 +293,13 @@ body {
       width: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
       padding: 100px 0;
       background-color: var(--backgroundBlack);
       color: #fff;
 
       .item {
         max-width: 360px;
-        align-self: center;
+        min-height: 560px;
         margin-right: 60px;
         display: flex;
         flex-direction: column;
@@ -317,6 +316,7 @@ body {
 
         &__text {
           margin: 0 0 60px 0;
+          flex-grow: 2;
         }
 
         .btn {

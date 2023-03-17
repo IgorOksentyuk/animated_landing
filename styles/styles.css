@@ -234,14 +234,13 @@ body main .communacation {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 100px 0;
   background-color: var(--backgroundBlack);
   color: #fff;
 }
 body main .communacation .item {
   max-width: 360px;
-  align-self: center;
+  min-height: 560px;
   margin-right: 60px;
   display: flex;
   flex-direction: column;
@@ -256,6 +255,7 @@ body main .communacation .item__title {
 }
 body main .communacation .item__text {
   margin: 0 0 60px 0;
+  flex-grow: 2;
 }
 body main .communacation .item .btn {
   width: 180px;
