@@ -465,6 +465,9 @@ body main .advertisers .block .container {
   display: flex;
   margin-bottom: 60px;
 }
+body main .advertisers .block .container__img {
+  margin-right: 10px;
+}
 body main .advertisers .block .container__logo-title {
   font-size: 56px;
   margin: 0;

@@ -583,6 +583,10 @@ body {
           display: flex;
           margin-bottom: 60px;
 
+          &__img {
+            margin-right: 10px;
+          }
+
           &__logo {
             &-title {
               font-size: 56px;
