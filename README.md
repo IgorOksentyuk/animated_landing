@@ -1,4 +1,4 @@
-**This is a landing page with a slider and various blocks with different types of animation.**
+**One-page adaptive landing with a slider and various blocks with different types of animation.**
 ---
 
 _Made with plain:_
